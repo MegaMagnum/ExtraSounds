@@ -1,0 +1,11 @@
+name: ExtraSounds
+version: '${project.version}'
+main: me.megamagnum.extrasounds.ExtraSounds
+api-version: 1.19
+prefix: ExtraSounds
+authors: [ MegaMagnum#7570 ]
+description: Gives extra sounds to certian actions ingame!
+commands:
+  togglesound:
+    description: Toggles all sound effects ingame
+    usage: /<command>

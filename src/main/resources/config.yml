@@ -1,0 +1,15 @@
+
+# If ChatPing is true players are able to ping each other in chat.
+ChatPing: true
+
+# Plays a sound to all online players when a player joins
+JoinSound: true
+JoinVolume: 1
+
+# Plays a sound to all online players when a player leaves
+LeaveSound: true
+LeaveVolume: 1
+
+
+
+# Dont touch this!! If you mess with this you will mess with user interfaces and settings!
