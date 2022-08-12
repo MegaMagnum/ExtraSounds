@@ -22,8 +22,9 @@ public class eventMessages implements Listener {
 
         if(config.getBoolean("ChatPing")){
         for (Player pinged : Bukkit.getOnlinePlayers()) {
+            e.setCancelled(true);
             if(e.getMessage().toLowerCase().contains(pinged.getName().toLowerCase())) {
-                e.setCancelled(true);
+
                 if(config.getBoolean("Users." + pinged.getUniqueId() + "sounds")) {
                     e.setCancelled(true);
 
@@ -45,14 +46,12 @@ public class eventMessages implements Listener {
                         sender.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(ChatColor.RED + "The player you are trying to ping has his pings toggled off"));
                 }
 
-                }
+                }else{
+                e.setMessage(" "+ e.getMessage());
+            }
 
 
             }
             }
         }
     }
-
-
-
-
